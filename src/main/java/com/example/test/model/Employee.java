@@ -4,7 +4,7 @@ package com.example.test.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "emplyees")
+@Table(name = "employees")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY  )
@@ -43,8 +43,8 @@ public class Employee {
         return lastName;
     }
 
-    public void setLaastName(String laastName) {
-        this.lastName = laastName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getFristName() {
